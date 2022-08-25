@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {I}Problem}{1}%
+\contentsline {section}{\numberline {II}Solution}{1}%
+\contentsline {subsection}{\numberline {\mbox {II-A}}Truth Table}{1}%
+\contentsline {subsection}{\numberline {\mbox {II-B}}K-map}{1}%
+\contentsline {subsection}{\numberline {\mbox {II-C}}Rules to simplify K-maps}{1}%
+\contentsline {subsection}{\numberline {\mbox {II-D}}Simplification}{2}%
+\contentsline {section}{\numberline {III}Verification \& Conclusion}{2}%
