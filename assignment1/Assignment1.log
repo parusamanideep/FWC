@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.22)  25 AUG 2022 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.22)  25 AUG 2022 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,27 +252,27 @@ Package pdftex.def Info: /mnt/c/Users/manid/FWC/assignment1/KMAP_ASN1.jpg  used
  on input line 91.
 (pdftex.def)             Requested size: 224.63869pt x 201.75325pt.
 
-Underfull \hbox (badness 5008) in paragraph at lines 100--115
+Underfull \hbox (badness 5008) in paragraph at lines 100--116
 []\OT1/ptm/m/n/12 The sim-pli-fied Boolean ex-pres-sion can be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--115
+Underfull \hbox (badness 10000) in paragraph at lines 100--116
 
  []
 
 
-Overfull \hbox (34.38919pt too wide) in paragraph at lines 100--115
+Overfull \hbox (34.38919pt too wide) in paragraph at lines 100--116
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--115
+Underfull \hbox (badness 10000) in paragraph at lines 100--116
 
  []
 
 
-Underfull \hbox (badness 8132) in paragraph at lines 100--115
+Underfull \hbox (badness 8132) in paragraph at lines 100--116
 \OT1/ptm/m/n/12 The given Boolean ex-pres-sion is sim-pli-fied
  []
 
@@ -296,7 +296,7 @@ ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment1.pdf (2 pages, 110118 bytes).
+Output written on Assignment1.pdf (2 pages, 110112 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
