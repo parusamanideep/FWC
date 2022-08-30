@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.22)  30 AUG 2022 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.22)  30 AUG 2022 12:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Assignment1.tex
-(./Assignment1.tex
+**ide.tex
+(./ide.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -513,8 +513,8 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \l__kvmap_bundle_maxx_int=\count289
 \l__kvmap_bundle_maxy_int=\count290
 )
-(./Assignment1.aux)
-\openout1 = `Assignment1.aux'.
+(./ide.aux)
+\openout1 = `ide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -559,7 +559,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-ABD: EveryShipout initializing macros (./Assignment1.toc
+ABD: EveryShipout initializing macros (./ide.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -568,7 +568,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
 )
 \tf@toc=\write4
-\openout4 = `Assignment1.toc'.
+\openout4 = `ide.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 29.
@@ -609,26 +609,26 @@ Overfull \hbox (43.62924pt too wide) in paragraph at lines 120--129
 
 [2
 
-] (./Assignment1.aux) ) 
+] (./ide.aux) ) 
 Here is how much of TeX's memory you used:
  14931 strings out of 481239
- 300170 string characters out of 5920377
- 545106 words of memory out of 5000000
+ 300066 string characters out of 5920377
+ 545082 words of memory out of 5000000
  29945 multiletter control sequences out of 15000+600000
  567137 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,9n,84p,417b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.e
-nc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment1.pdf (2 pages, 102791 bytes).
+ 68i,9n,84p,409b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ide.pdf (2 pages, 102791 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
