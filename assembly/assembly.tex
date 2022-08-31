@@ -7,66 +7,67 @@
 \usepackage{kvmap}
 
 
-\title{Assignment \textrm{I} \textbf{\\Simplifying Boolean expression using Kmap}}
+\title{Assembly - Assignment \textrm{I} \textbf{\\Simplifying Boolean expression using Kmap}}
 \author{Manideep Parusha - FWC22004}
 \date{\today}
 \begin{document}
 \maketitle
 
-\tableofcontents
-
+\tableofcontents 
+\bigskip
+\begin{abstract}
+This manual describes the rules for the simplification of K-maps and steps to develop the simplified expression which is furthuer implemented on hardware for functionality for a given Boolean Function. 
+\end{abstract}
 \section{Problem}
-Reduce the following Boolean expression in the simplest form using Kmap. The Expression with Sum of Products (SOP) is as follows:
+Reduce the following Boolean expression in the simplest form using Kmap. The Expression with Sum of Products (SoP) is as follows:
 $$ {F(P,Q,R,S) = \sum (0,1,2,3,5,6,7,10,14,15)}$$
 
+\newpage
 \section{Solution}
 
 \subsection{Truth Table}
-Truth table for the SOP given:
-\begin{table}[h!]
+Truth table for the given Boolean function:
+\begin{table}[h]
     \centering
-    
-    \begin{tabular}[20pt]{|c|c|c|c|c|c|c|}
+    \begin{tabular}[20pt]{|c|c|c|c|c||c|c|}
           \hline
-          &P&Q&R&S&F(P,Q,R,S) 
-          \\ \hline & & & & & 
-          \\ 0&0&0&0&0&1
-          \\ 1&0&0&0&1&1
-          \\ 2&0&0&1&0&1
-          \\ 3&0&0&1&1&1
-          \\ 4&0&1&0&0&0
-          \\ 5&0&1&0&1&1
-          \\ 6&0&1&1&0&1
-          \\ 7&0&1&1&1&1
-          \\ 8&1&0&0&0&0
-          \\ 9&1&0&0&1&0
-          \\ 10&1&0&1&0&1
-          \\ 11&1&0&1&1&0
-          \\ 12&1&1&0&0&0
-          \\ 13&1&1&0&1&0
-          \\ 14&1&1&1&0&1
-          \\ 15&1&1&1&1&1     
-          \\ \hline
+          &P&Q&R&S&F(P,Q,R,S) \\
+          \hline
+          0&0&0&0&0&1\\
+          1&0&0&0&1&1\\
+          2&0&0&1&0&1\\
+          3&0&0&1&1&1\\
+          4&0&1&0&0&0\\
+          5&0&1&0&1&1\\
+          6&0&1&1&0&1\\
+          7&0&1&1&1&1\\
+          8&1&0&0&0&0\\
+          9&1&0&0&1&0\\
+          10&1&0&1&0&1\\
+          11&1&0&1&1&0\\
+          12&1&1&0&0&0\\
+          13&1&1&0&1&0\\
+          14&1&1&1&0&1\\
+          15&1&1&1&1&1\\   
+          \hline 
               \end{tabular}
-            \vspace{9pt}
-    \caption{Truth Table for given Boolean expression}
+              \bigskip
+    \caption{Truth Table}
     \label{Truthtable}
 \end{table}
-
 \subsection{K-map}
-K-map for the above truth table:\\
+A Karnaugh map (K-map) is a visual method used to simplify the algebraic expressions in Boolean functions without having to resort to complex theorems or equation manipulations.  It involves fewer steps than the algebraic minimization technique to arrive at a simplified expression. K-map simplification technique always results in minimum expression if carried out properly. Rules to follow while simplifying a K-map mention in further sections. \\ 
+\newpage
+K-map for the above mentioned truth table:
 \begin{table}[h]
-
 \centering
 \begin{kvmap}
 \kvlist{4}{4}{1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1}{P, Q, R, S}
-%\bundle {3}{2}{2}{3}
 \end{kvmap}
 \vspace{4pt}
 \caption{K-Map from the Truth Table}
     \label{kmap}
 \end{table}
-
 \subsection{Rules to simplify K-maps}
 The Karnaugh map uses the following rules for the simplification of expressions by grouping together adjacent cells containing ones
 \vspace{4pt}
@@ -80,62 +81,149 @@ The Karnaugh map uses the following rules for the simplification of expressions 
     \item Groups may wrap around the table. The leftmost cell in a row may be grouped with the rightmost cell and the top cell in a column may be grouped with the bottom cell 
     \item There should be as few groups as possible, as long as this does not contradict any of the previous rules
 \end{enumerate}
-
-
+\newpage
 \subsection{Simplification}
 \begin{table}[h]
-
 \centering
 \begin{kvmap}
-\kvlist{4}{4}{1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1}{P, Q, R, S}
+\kvlist{4}{4}{1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1}{R,S,P,Q}
+\bundle[color = red, reducespace = 1pt] {0}{0}{3}{0}
+%\bundle[color = black,reducespace = 3pt] {1}{0}{2}{1}
+%\bundle[color = green,reducespace = 2pt] {2}{1}{3}{2}
+%\bundle[color = blue] {3}{0}{3}{3}
+\end{kvmap}
+\vspace{4pt}
+\caption{K-map 1}
+    \label{kmap_grouped1}
+\end{table}
+Resulting expression from the groups in the above K-map: P'Q'\\
+
+\bigskip
+\begin{table}[h]
+\centering
+\begin{kvmap}
+\kvlist{4}{4}{1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1}{R,S,P,Q}
+\bundle[color = red, reducespace = 1pt] {0}{0}{3}{0}
+\bundle[color = black,reducespace = 3pt] {1}{0}{2}{1}
+%\bundle[color = green,reducespace = 2pt] {2}{1}{3}{2}
+%\bundle[color = blue] {3}{0}{3}{3}
+\end{kvmap}
+%\vspace{4pt}
+\caption{K-map 2}
+    \label{kmap_grouped2}
+\end{table}
+Resulting expression from the groups in the above K-map:  P'Q' + P'S\\
+\newpage
+\begin{table}[h!]
+\centering
+\begin{kvmap}
+\kvlist{4}{4}{1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1}{R,S,P,Q}
+\bundle[color = red, reducespace = 1pt] {0}{0}{3}{0}
+\bundle[color = black,reducespace = 3pt] {1}{0}{2}{1}
+\bundle[color = green,reducespace = 2pt] {2}{1}{3}{2}
+%\bundle[color = blue] {3}{0}{3}{3}
+\end{kvmap}
+\vspace{4pt}
+\caption{K-map 3}
+    \label{kmap_grouped3}
+\end{table}
+Resulting expression from the groups in the above K-map: P'Q' + P'S + RS'\\
+
+\begin{table}[h]
+\centering
+\begin{kvmap}
+\kvlist{4}{4}{1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1}{R,S,P,Q}
 \bundle[color = red, reducespace = 1pt] {0}{0}{3}{0}
 \bundle[color = black,reducespace = 3pt] {1}{0}{2}{1}
 \bundle[color = green,reducespace = 2pt] {2}{1}{3}{2}
 \bundle[color = blue] {3}{0}{3}{3}
 \end{kvmap}
-\vspace{4pt}
-\caption{Grouped K-map}
-    \label{kmap_grouped}
+%\vspace{4pt}
+\caption{K-map 4}
+    \label{kmap_grouped4}
 \end{table}
 
-Simplified Boolean expression using Kmap without don't care will be:
-$$F(P,Q,R,S) = P'Q' + P'S + RS' + QR$$
+Resulting expression from the groups in the above K-map: P'Q' + P'S + RS' + QR\\
 
-\section{Verification \& Conclusion}
-The simplified Boolean expression can be implemented using the file in the below link which is a C++ program to implement the logic thet is simplified using the K-map.
-\vspace{10pt}
-\begin{tabular}{|c|}
-    \hline
-wget https://raw.githubusercontent.com/parusamanideep
-\\/FWC/main/IDE/codes/src/main.cpp
-     \\ \hline
-\end{tabular}
+As we have grouped all the 1's in the K-map, we can consider the obtained expression to be final. In the K-map above, we can group atmost four 1's only. So we cannot further simplify the obtained expression from the K-map.\\
 
-\vspace{4pt}
+\bigskip Hence, the simplified Boolean expression using Kmap will be: 
+$$\textbf{F(P,Q,R,S) = P'Q' + P'S + RS' + QR}$$
+\newpage
+\section{Hardware Implementation} 
 
- The same simplified boolean expression can be implemented using assembly code in the below link.
-\vspace{10pt}
-\begin{tabular}{|c|}
-    \hline
-wget https://raw.githubusercontent.com/parusamanideep
-\\/FWC/main/assembly/codes/kmap.asm
-     \\ \hline
-\end{tabular}
-\\
-%\bigskip
-It can also be implemented using C code in the below link.
-
-\vspace{5pt}
-\begin{tabular}{|c|}
-    \hline
-wget https://raw.githubusercontent.com/parusamanideep
-\\/FWC/main/gcc/codes/main.c
-     \\ \hline
+\subsection{Components required}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Component } & \textbf{Qty.}\\
+\hline
+Arduino UNO & 1\\
+\hline
+Jumper wires & 4 \\
+\hline
 \end{tabular}
 \bigskip
+\caption{components list}
+\end{table}
 
- P, Q, R, S are given as inputs to 2, 3, 4, 5 pins respectively from the 5V and GND lines.
-\\The given Boolean expression is simplified and verified for functionality.
+The hardware we are using for implementation is the Arduino UNO board, which has AtMega328p micro-controller on-board. It is an AVR micro-controller with 8-bit ALU, works at 16MHz clock frequency, 3 ports including 1 analogue port. \\
+We are using 4 pins(2,3,4,5) of PORTD for input and 1 pin(13) of PORTB for output.
 
+\subsection{Connections}
+The following table shows the inputs to be given to the microcontroller for implementing the above simplified Boolean expression.\\
+
+\bigskip
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Arduino & 2 & 3 & 4 & 5 \\
+\hline
+Inputs & P & Q & R & S \\
+\hline
+\end{tabular}
+\bigskip
+\caption{Input connections}
+\end{table}
+
+P, Q, R, S are the inputs which can be set or reset by manually connecting them to 5V or GND respectively. In this way we can make 16 combinations of the input sequence and they can be tested for functionality.
+The output is from from Pin 13, which drives the on-board LED of Arduino UNO. When the output is '1', the LED is 'ON' and when the output is '0', the LED will be 'OFF'.\\
+ 
+\subsection{Code}
+The code for implementing the logic of the Boolean expression in 'Assembly' language using AVR assembler can be downloaded by the command mentioned below \\ \\
+\begin{tabular}{|c|}
+    \hline
+wget https://raw.githubusercontent.com/parusamanideep
+\\/FWC/main/assembly/codes/kmap.asm\\
+     \hline
+\end{tabular}\\
+
+\bigskip
+The logic in the code uses 4 AND operations and 3 OR operations for implementation. line of the code is shown below which computes the Boolean Expression simplified above.
+$$ F = (!P\&\&!Q) || (!P\&\&S) || (R\&\&!S) || (Q\&\&R); $$
+Few Arduino functions used in the code are listed below with there usage explained.\\
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Syntax & use\\
+\hline
+pinMode(*,*)& set the pin as INPUT / OUTPUT\\
+\hline
+digitalWrite(*,*)& Output the given value to Pin\\
+\hline
+digitalRead(*)& Read the input from given Pin\\
+\hline 
+\end{tabular}
+\bigskip
+\caption{Arduino functions used in code} 
+\end{table}  
+
+\section{Conclusion}
+The Simplified Boolen Expression is implemented on Arduino and it's functionality can be tested by connecting P, Q, R, S inputs to 5V and GND to give the Pin '1' or '0' value.\\
+Total number of combination of inputs that can be formed are 16 and the output can be verified by comparing the truthtable and the output obtained for the given inputs.
 
 \end{document}
