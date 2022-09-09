@@ -193,33 +193,65 @@ The output is from from Pin 13, which drives the on-board LED of Arduino UNO. Wh
  
 \subsection{Code}
 The code for implementing the logic of the Boolean expression in 'Assembly' language using AVR assembler can be downloaded by the command mentioned below \\ \\
+\begin{table}[h]
 \begin{tabular}{|c|}
     \hline
 wget https://raw.githubusercontent.com/parusamanideep
 \\/FWC/main/assembly/codes/kmap.asm\\
      \hline
 \end{tabular}\\
-
+\end{table}\\
 \bigskip
-The logic in the code uses 4 AND operations and 3 OR operations for implementation. line of the code is shown below which computes the Boolean Expression simplified above.
-$$ F = (!P\&\&!Q) || (!P\&\&S) || (R\&\&!S) || (Q\&\&R); $$
-Few Arduino functions used in the code are listed below with there usage explained.\\
+
+The logic in the assembly code is shown below which computes the Boolean Expression simplified above.\\
+%$$ F = (!P\&\&!Q) || (!P\&\&S) || (R\&\&!S) || (Q\&\&R); $$
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|}
+\hline
+mov result, P	\\
+eor result, mask\\
+mov temp,Q		\\
+eor temp, mask\\
+and result, temp\\
+
+mov temp, P\\
+eor temp, mask\\
+and temp, S\\
+or result, temp\\
+
+mov temp, S\\
+eor temp, mask\\
+and temp, R\\
+or result, temp\\
+
+mov temp, Q\\
+and temp, R\\
+or result, temp\\
+\hline
+\end{tabular}
+\end{table}\\
+Few AVR instructions used in the code are listed below with there usage explained.\\
 
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|}
 \hline
-Syntax & use\\
+Instruction & use\\
 \hline
-pinMode(*,*)& set the pin as INPUT / OUTPUT\\
+LDI & Load register with value\\
 \hline
-digitalWrite(*,*)& Output the given value to Pin\\
+MOV & Move data from register to register\\
 \hline
-digitalRead(*)& Read the input from given Pin\\
+AND & Perform AND operation\\
 \hline 
+OR & Perform OR operation\\
+\hline
+EOR & Perform XOR operation\\
+\hline
 \end{tabular}
 \bigskip
-\caption{Arduino functions used in code} 
+\caption{AVR instructions used in code} 
 \end{table}  
 
 \section{Conclusion}

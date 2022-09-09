@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.22)  30 AUG 2022 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.22)  8 SEP 2022 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -513,7 +513,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \l__kvmap_bundle_maxx_int=\count289
 \l__kvmap_bundle_maxy_int=\count290
 )
-No file gcc.aux.
+(./gcc.aux)
 \openout1 = `gcc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -530,6 +530,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
+
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -558,107 +559,147 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-ABD: EveryShipout initializing macros
-No file gcc.toc.
+ABD: EveryShipout initializing macros (./gcc.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
 \tf@toc=\write4
 \openout4 = `gcc.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <9> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 32.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 2512) in paragraph at lines 59--60
+\OT1/ptm/m/n/12 used to sim-plify the al-ge-braic ex-pres-sions in
+ []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 80--81
+Underfull \hbox (badness 1565) in paragraph at lines 59--60
+\OT1/ptm/m/n/12 Boolean func-tions with-out hav-ing to re-sort to
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 59--60
+\OT1/ptm/m/n/12 tech-nique to ar-rive at a sim-pli-fied ex-pres-sion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 2103) in paragraph at lines 81--82
 []\OT1/ptm/m/n/12 Groups may wrap around the ta-ble. The
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
+\OT1/ptm/m/n/12 micro-controller on-board. It is an AVR
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--205
+\OT1/ptm/m/n/12 Boolean ex-pres-sion in 'As-sem-bly' lan-guage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--205
+
+ []
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 101--102
-[]\OT1/ptm/m/n/12 Simplified Boolean ex-pres-sion us-ing Kmap
+Underfull \hbox (badness 10000) in paragraph at lines 206--235
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+[]\OT1/ptm/m/n/12 The Sim-pli-fied Boolen Ex-pres-sion is
  []
 
 
-Underfull \vbox (badness 5985) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Underfull \hbox (badness 5008) in paragraph at lines 105--113
-[]\OT1/ptm/m/n/12 The sim-pli-fied Boolean ex-pres-sion can be
+Underfull \hbox (badness 1668) in paragraph at lines 258--260
+\OT1/ptm/m/n/12 im-ple-mented on Ar-duino and it's func-tion-al-ity
  []
 
+[4
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--113
-\OT1/ptm/m/n/12 im-ple-mented us-ing the file in the be-low
- []
-
-
-Underfull \hbox (badness 2828) in paragraph at lines 105--113
-\OT1/ptm/m/n/12 link which is a C++ pro-gram to im-ple-ment
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 105--113
-\OT1/ptm/m/n/12 the logic thet is sim-pli-fied us-ing the K-map.
- []
-
-
-Overfull \hbox (31.62924pt too wide) in paragraph at lines 105--113
-[] 
- []
-
-
-Overfull \hbox (31.62924pt too wide) in paragraph at lines 116--127
-[] 
- []
-
-
-Overfull \hbox (43.62924pt too wide) in paragraph at lines 129--136
-[][]
- []
-
-[2
-
-] (./gcc.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./gcc.aux) ) 
 Here is how much of TeX's memory you used:
- 14926 strings out of 481239
- 300028 string characters out of 5920377
- 548083 words of memory out of 5000000
- 29945 multiletter control sequences out of 15000+600000
- 566030 words of font info for 83 fonts, out of 8000000 for 9000
+ 14937 strings out of 481239
+ 300131 string characters out of 5920377
+ 544860 words of memory out of 5000000
+ 29948 multiletter control sequences out of 15000+600000
+ 570447 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,9n,84p,409b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gcc.pdf (2 pages, 100448 bytes).
+ 68i,9n,84p,460b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gcc.pdf (4 pages, 109878 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

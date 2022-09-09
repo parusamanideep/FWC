@@ -201,22 +201,49 @@ wget https://raw.githubusercontent.com/parusamanideep
 \end{tabular}\\
 
 \bigskip
-The logic in the code uses 4 AND operations and 3 OR operations for implementation. line of the code is shown below which computes the Boolean Expression simplified above.
-$$ F = (!P\&\&!Q) || (!P\&\&S) || (R\&\&!S) || (Q\&\&R); $$
-Few Arduino functions used in the code are listed below with there usage explained.\\
+The logic in the assembly code is shown below which computes the Boolean Expression simplified above.
+\begin{tabular}{|c|}
+	\hline
+mov result, P	\\
+eor result, mask\\
+mov temp,Q	\\
+eor temp, mask	\\
+and result, temp\\
+
+mov temp, P	\\
+eor temp, mask	\\
+and temp, S	\\
+or result, temp	\\
+	
+mov temp, S	\\
+eor temp, mask	\\
+and temp, R	\\
+or result, temp	\\
+
+mov temp, Q	\\
+and temp, R	\\
+or result, temp	\\
+\hline
+\end{tabular}
+
+Few AVR instructions used in the code are listed below with there usage explained.\\
 
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|}
 \hline
-Syntax & use\\
+Instruction & use\\
 \hline
-pinMode(*,*)& set the pin as INPUT / OUTPUT\\
+ldi & Load register with value\\
 \hline
-digitalWrite(*,*)& Output the given value to Pin\\
+MOV & Move value from register to register\\
 \hline
-digitalRead(*)& Read the input from given Pin\\
+OR & Perform OR operation\\
 \hline 
+AND & Perform AND operation \\
+\hline
+EOR & Perform XOR operation \\
+\hline
 \end{tabular}
 \bigskip
 \caption{Arduino functions used in code} 
