@@ -58,3 +58,4 @@ lsl result
 lsl result
 lsl result
 out PORTB, result
+rjmp start
