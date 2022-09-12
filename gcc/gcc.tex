@@ -6,8 +6,7 @@
 \usepackage{graphicx}
 \usepackage{kvmap}
 
-
-\title{Assembly - Assignment \textrm{I} \textbf{\\Simplifying Boolean expression using Kmap}}
+\title{GCC - Assignment \textrm{I} \textbf{\\Simplifying Boolean expression using Kmap}}
 \author{Manideep Parusha - FWC22004}
 \date{\today}
 \begin{document}
@@ -197,62 +196,16 @@ The code for implementing the logic of the Boolean expression in 'Assembly' lang
 \begin{tabular}{|c|}
     \hline
 wget https://raw.githubusercontent.com/parusamanideep
-\\/FWC/main/assembly/codes/kmap.asm\\
+\\/FWC/main/gcc/codes/main.c\\
      \hline
 \end{tabular}\\
 \end{table}\\
 \bigskip
 
-The logic in the assembly code is shown below which computes the Boolean Expression simplified above.\\
-%$$ F = (!P\&\&!Q) || (!P\&\&S) || (R\&\&!S) || (Q\&\&R); $$
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|}
-\hline
-mov result, P	\\
-eor result, mask\\
-mov temp,Q		\\
-eor temp, mask\\
-and result, temp\\
+The logic in the code is shown below which computes the Boolean Expression simplified above.\\
+$$ f = ((!p)\&\&(!q)) || ((!p)\&\&(s)) || (r\&\&(!s)) || (q\&\&r); $$
 
-mov temp, P\\
-eor temp, mask\\
-and temp, S\\
-or result, temp\\
-
-mov temp, S\\
-eor temp, mask\\
-and temp, R\\
-or result, temp\\
-
-mov temp, Q\\
-and temp, R\\
-or result, temp\\
-\hline
-\end{tabular}
-\end{table}\\
-Few AVR instructions used in the code are listed below with there usage explained.\\
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-Instruction & use\\
-\hline
-LDI & Load register with value\\
-\hline
-MOV & Move data from register to register\\
-\hline
-AND & Perform AND operation\\
-\hline 
-OR & Perform OR operation\\
-\hline
-EOR & Perform XOR operation\\
-\hline
-\end{tabular}
-\bigskip
-\caption{AVR instructions used in code} 
-\end{table}  
+%Few instructions used in the code are listed below with there usage explained.\\
 
 \section{Conclusion}
 The Simplified Boolen Expression is implemented on Arduino and it's functionality can be tested by connecting P, Q, R, S inputs to 5V and GND to give the Pin '1' or '0' value.\\
