@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.13)  22 SEP 2022 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.13)  6 OCT 2022 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**line_assignment.tex
-(./line_assignment.tex
+**circle_assignment.tex
+(./circle_assignment.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -177,8 +177,8 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [journal].
 
-(./line_assignment.aux)
-\openout1 = `line_assignment.aux'.
+(./circle_assignment.aux)
+\openout1 = `circle_assignment.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
@@ -266,55 +266,309 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 23.
-<figs/sq_plot.png, id=1, 462.528pt x 346.896pt>
-File: figs/sq_plot.png Graphic file (type png)
-<use figs/sq_plot.png>
-Package pdftex.def Info: figs/sq_plot.png  used on input line 31.
+<figs/plot_cir.png, id=1, 462.528pt x 346.896pt>
+File: figs/plot_cir.png Graphic file (type png)
+<use figs/plot_cir.png>
+Package pdftex.def Info: figs/plot_cir.png  used on input line 31.
 (pdftex.def)             Requested size: 266.0125pt x 199.51657pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 41.
+(Font)              <12> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 41.
+(Font)              <8> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 41.
+(Font)              <6> on input line 42.
+
+Overfull \hbox (1.43803pt too wide) in paragraph at lines 42--55
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 Here, the points \boldsymbol{A}
+                                     and \boldsymbol{B} are the ends of diam...
+
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.69 Here, the points \boldsymbol{A}
+                                     and \boldsymbol{B} are the ends of diam...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 Here, the points \boldsymbol{A}
+                                     and \boldsymbol{B} are the ends of diam...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.69 Here, the points \boldsymbol{A}
+                                     and \boldsymbol{B} are the ends of diam...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 ...e points \boldsymbol{A} and \boldsymbol{B}
+                                                   are the ends of diameter ...
+
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.69 ...e points \boldsymbol{A} and \boldsymbol{B}
+                                                   are the ends of diameter ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 ...e points \boldsymbol{A} and \boldsymbol{B}
+                                                   are the ends of diameter ...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.69 ...e points \boldsymbol{A} and \boldsymbol{B}
+                                                   are the ends of diameter ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 So, the tangents at \boldsymbol{A}
+                                        and \boldsymbol{B} are given by,
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.82 So, the tangents at \boldsymbol{A}
+                                        and \boldsymbol{B} are given by,
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 So, the tangents at \boldsymbol{A}
+                                        and \boldsymbol{B} are given by,
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.82 So, the tangents at \boldsymbol{A}
+                                        and \boldsymbol{B} are given by,
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 ...gents at \boldsymbol{A} and \boldsymbol{B}
+                                                   are given by,
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.82 ...gents at \boldsymbol{A} and \boldsymbol{B}
+                                                   are given by,
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 ...gents at \boldsymbol{A} and \boldsymbol{B}
+                                                   are given by,
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.82 ...gents at \boldsymbol{A} and \boldsymbol{B}
+                                                   are given by,
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 where \boldsymbol{A}
+                          and \boldsymbol{B} are the radius vectors towards ...
+
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.88 where \boldsymbol{A}
+                          and \boldsymbol{B} are the radius vectors towards ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 where \boldsymbol{A}
+                          and \boldsymbol{B} are the radius vectors towards ...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.88 where \boldsymbol{A}
+                          and \boldsymbol{B} are the radius vectors towards ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 where \boldsymbol{A} and \boldsymbol{B}
+                                             are the radius vectors towards ...
+
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.88 where \boldsymbol{A} and \boldsymbol{B}
+                                             are the radius vectors towards ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 where \boldsymbol{A} and \boldsymbol{B}
+                                             are the radius vectors towards ...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.88 where \boldsymbol{A} and \boldsymbol{B}
+                                             are the radius vectors towards ...
+
+? 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/sq_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+ <./figs/plot_cir.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 Here, \boldsymbol{T_1}
+                            and \boldsymbol{T_2} are the directional vectors...
+
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.94 Here, \boldsymbol{T_1}
+                            and \boldsymbol{T_2} are the directional vectors...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 Here, \boldsymbol{T_1}
+                            and \boldsymbol{T_2} are the directional vectors...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.94 Here, \boldsymbol{T_1}
+                            and \boldsymbol{T_2} are the directional vectors...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 Here, \boldsymbol{T_1} and \boldsymbol{T_2}
+                                                 are the directional vectors...
+
+? 
+! Extra }, or forgotten $.
+\math@atom #1#2->\binrel@ {#1}\binrel@@ {#2}
+                                            
+l.94 Here, \boldsymbol{T_1} and \boldsymbol{T_2}
+                                                 are the directional vectors...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 Here, \boldsymbol{T_1} and \boldsymbol{T_2}
+                                                 are the directional vectors...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.94 Here, \boldsymbol{T_1} and \boldsymbol{T_2}
+                                                 are the directional vectors...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[2] (./line_assignment.aux) ) 
+! Undefined control sequence.
+l.98 If we cross multiply the vectors \boldsymol
+                                                {T_1} and \boldsymbol{T_2}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.98 ...e cross multiply the vectors \boldsymol{T_
+                                                  1} and \boldsymbol{T_2}
+? 
+! Extra }, or forgotten $.
+l.98 ...cross multiply the vectors \boldsymol{T_1}
+                                                   and \boldsymbol{T_2}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99 
+     
+? 
+[2
+
+] (./circle_assignment.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 98 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 2878 strings out of 478287
- 44669 string characters out of 5849289
- 363099 words of memory out of 5000000
- 21048 multiletter control sequences out of 15000+600000
+ 2867 strings out of 478287
+ 44587 string characters out of 5849289
+ 356024 words of memory out of 5000000
+ 21037 multiletter control sequences out of 15000+600000
  480247 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,62p,291b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-supe
-r-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on line_assignment.pdf (2 pages, 130971 bytes).
+ 55i,13n,62p,231b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on circle_assignment.pdf (2 pages, 114402 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

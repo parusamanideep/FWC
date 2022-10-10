@@ -4,15 +4,16 @@
 import numpy as np
  
 
-
 #Square vertices
 def sq_vert(a):
     p = a
     O = np.array([0,0])
     A = np.array([p,0])
-    C = np.array([p,p])
+    #C = np.array([p,p])
     B = np.array([0,p])
-    M = np.array([p/2,p/2])
+    #M = np.array([p/2,p/2])
+    C = A + B
+    M = C/2
     return O,A,B,C,M
 
 #line gen

@@ -24,28 +24,45 @@
 \section*{Problem}
 \paragraph{Show that the diagonals of a square are equal and bisect each other at right angles}
 
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=1\columnwidth]{figs/fig1.pdf}
-%\caption{Triangle ABC right angled at C}
-%\label{fig:triangle}
-%\end{figure}
-
 \section*{Solution}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\columnwidth]{./figs/sq_plot.png}
-\caption{Diagram generated using python}
+\includegraphics[width=\columnwidth]{figs/sq_plot.png}
+\caption{Square generated using python}
 \label{fig:sq_py}
 \end{figure}
 
-%\subsection*{Part 1}
-Let OABC is a Square. Length of all sides are equal for a square and all interior angles equal to 90\degree \\
+\subsection*{Construction}
+Inputs taken for the construction of the Square is 'a' , which is the side length of the square.
+\begin{table}[h]
+	\centering
+\setlength\extrarowheight{2pt}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Symbol} & \textbf{Value} & \textbf{Description} \\
+		\hline
+		a & 10 & length of OA\\
+		\hline
+		O & (0,0) & point O\\
+		\hline
+		A & (a,0) & point A\\
+		\hline
+		B & (0,a) & point B\\
+		\hline
+		C & A+B & point C\\
+		\hline
+		M & $\frac{C}{2}$ & point M\\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+Let OABC is a Square. Length of all sides are equal for a square and all interior angles equal to 90\degree.
 O at the origin and vectors A, B \& C represent other vertices of the square.
 \begin{align}
-OA = AB = BC = CO \\
-\angle A = \angle B = \angle C = \angle O = 90\degree
+	\norm{\boldsymbol{OA}} = \norm{\boldsymbol{OB}} = \norm{\boldsymbol{BC}} = \norm{\boldsymbol{AC}} \\
+\angle OAC = \angle OBC = \angle BCA = \angle AOB = 90\degree
 \label{eq-1}
 \end{align}
 Here, $D_1$ and $D_2$ are the diagonals of the square and we can compute $D_1$ and $D_2$ as
@@ -59,13 +76,18 @@ Here, $D_1$ and $D_2$ are the diagonals of the square and we can compute $D_1$ a
 \end{equation}
 
 To prove that the diagonals of the square are equal, we can find the length of the two diagonals and compare. Hence,
-\begin{align}
+\begin{equation}
 \norm {\boldsymbol{D_1}}  = \norm {\boldsymbol{A + B}}\\
+	\label{D1_len}
+\end{equation}
+\begin{equation}
 \norm {\boldsymbol{D_2}}  = \norm {\boldsymbol{A - B}}
-\end{align}
-For finding length of $D_1$, we can write from eqn. 5,  
+	\label{D2_len}
+\end{equation}
+For finding length of $D_1$, we can write from equation \eqref{D1_len},  
 \begin{align}
 	\norm{\boldsymbol{A + B}} = \sqrt{\norm{\boldsymbol{A}}^2 + \norm{\boldsymbol{B}}^2 + 2\boldsymbol{A}^T\boldsymbol{B}}
+	\label{extend_D1}
 \end{align}
 But, for a square we know that length of all sides are equal.
 \begin{equation}
@@ -77,7 +99,7 @@ and, the angle between two adjacent sides is 90\degree. The dot product of two v
 	\boldsymbol{A}^T\boldsymbol{B} = 0 
 	\label{dot_product_is_0}
 \end{equation}
-So the eqn. 7 becomes 
+So the equation \eqref{extend_D1} becomes 
 \begin{align}
 	\norm {\boldsymbol{A + B}} = \sqrt{2}\norm{\boldsymbol{A}}\\
 	\norm {\boldsymbol{D_1}} = \sqrt{2}\norm{\boldsymbol{A}} 
