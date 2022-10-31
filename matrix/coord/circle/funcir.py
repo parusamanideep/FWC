@@ -16,6 +16,11 @@ def circ_gen(O,r):
 	return x_circ
 
 
+#Generating points on a parabola
+def parab_gen(y):
+    a = 4
+    x = (y**2)/a
+    return x
 #line gen
 def line_gen(K,L):
     len = 10

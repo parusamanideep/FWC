@@ -1,39 +1,70 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
+import math 
 from numpy import linalg as LA
 
 import sys, os
 script_dir = os.path.dirname(__file__)
-lib_relative = '../../coord/conic'
+lib_relative = '../../coord/circle'
 sys.path.insert(0,os.path.join(script_dir, lib_relative))
 
 #local imports
-from funcon import *
+from funcir import *
 
-# set center of the circle
-C = np.array((2,2))
-#circle pass through the point (4,5)
-A = np.array((4,5))
-#radius of the circle
-r = LA.norm(A-C)
+simlen = 200
+#Standard parabola
+y = np.linspace(-6,6,simlen)
+x = parab_gen(y)
 
-#generate circle
-x_circ = circ_gen(C,r)
+#Parabola points
+#Standard Parabola Vertex
+O = np.array([0,0])
 
-#plot circle
-plt.plot(x_circ[0,:],x_circ[1,:],label= '$Circle$')
+#Focus
+F= np.array([2,0])
+V = np.array([[0,0],[0,1]])
+u = np.array([-2,0])
+#Point on parabola
+a1 = 2
+a2 = 2*(2**0.5)
 
-#label coordinates
+A = np.array([a1,a2])
 
-cir_coords = np.vstack((A,C)).T
-plt.scatter(cir_coords[0,:], cir_coords[1,:])
-vert_labels = ['A','C']
+n = A@V + u
+#print(n)
+mu = (-2*LA.norm(n))/(n.T@V@n)
 
+B = A + mu*n
+print(B)
+
+
+
+#Plotting the parabola
+plt.plot(x,y,label='Standard Parabola')
+
+#Plotting the directrix
+#plt.plot(x,D[1]*np.ones(simlen),label='Directrix')
+
+
+x_AB = line_gen(A,B)
+
+x_AO = line_gen(A,O)
+x_OB = line_gen(O,B)
+
+plt.plot(x_AB[0,:],x_AB[1,:])
+
+plt.plot(x_AO[0,:],x_AO[1,:])
+plt.plot(x_OB[0,:],x_OB[1,:])
+#Labeling the coordinates
+parab_coords = np.vstack((O,F, A, B)).T
+plt.scatter(parab_coords[0,:], parab_coords[1,:])
+vert_labels = ['O','F','A', 'B']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
-                 (cir_coords[0,i], cir_coords[1,i]), # this is the point to label
+                 (parab_coords[0,i], parab_coords[1,i]), # this is the point to label
                  textcoords="offset points", # how to position the text
-                 xytext=(5,10), # distance from text to points (x,y)
+                 xytext=(0,10), # distance from text to points (x,y)
                  ha='center') # horizontal alignment can be left, right or center
 
 plt.xlabel('$x$')
@@ -41,9 +72,14 @@ plt.ylabel('$y$')
 plt.grid()
 plt.axis('equal')
 
-plt.savefig('../figs/plot_con.png')
+#plt.savefig('plot_con.png')
 
-
+#OA & OB are perpendicular
+#print(A@B)
+#slope of AB
+m = B-A
+slope = m[1]/m[0]
+print('slope of AB = ',slope)
 
 
 

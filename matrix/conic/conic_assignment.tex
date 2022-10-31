@@ -23,19 +23,19 @@
 
 \maketitle
 \section*{Problem}
-\paragraph{Find the equation of the circle with center (2,2) and passes through the point (4,5).}
+\paragraph{A is a point on the parabola $y^2 = 4ax$. The normal at $\vec{A}$ cuts the parabola again at point $\vec{B}$. If $\vec{AB}$ subtends a right angle at the vertex of the parabola, find the slope of AB.}
 
 \section*{Solution}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=\columnwidth]{figs/plot_con.png}
-	\caption{Circle with center (2,2) and passing through (4,5)}
+	\caption{parabola with normal at A}
 \label{fig:con_py}
 \end{figure}
 
 \subsection*{Construction}
-Input taken for the construction of the circle are it's center and point it is passing through.
+Input taken for the construction of the parabola are it's focus and directrtx.
 
 \begin{table}[h]
 	\centering
@@ -44,62 +44,61 @@ Input taken for the construction of the circle are it's center and point it is p
 		\hline
 		\textbf{Symbol} & \textbf{Value} & \textbf{Description} \\
 		\hline
-		C & (2,2) & circle center\\
+		O & \myvec{0\\0} & vertex\\
 		\hline
-		A & (4,5) & point on circle\\
+		A & \myvec{a_1\\a_2} & point on parabola\\
 		\hline
-		r & $\norm{A-C}$ & circle radius\\
+		B & \myvec{b_1\\b_2} & point on parabola\\
+		\hline
+		F & \myvec{2,0} & Focus of the parabola\\
 		\hline
 	\end{tabular}
 \end{table}
-Let us assume a circle with radius 'r' and center at $\boldsymbol{C}$ which is passing through a point $\boldsymbol{A}$.\\
-Radius of the circle is the distance between center and any point on circle.
+From the given equation of the parabola, we can assume the points $\vec{A}\&\vec{B}$ as 
 \begin{align}
-	r = \norm{A-C}\\
-	r = \sqrt{13}
+	\vec{A} = \myvec{a_1\\a_2} = \myvec{2\\2\sqrt{2}}
 \end{align}
+%Radius of the circle is the distance between center and any point on circle.
+%\begin{align}
+%	r = \norm{A-C}\\
+%	r = \sqrt{13}
+%\end{align}
 
-The desired circle can be expressed as a conic with the parameters
-\begin{align}
-	\vec{V} = \vec{I} \\
-	\vec{u}= \myvec{-2 & -2} 
-\end{align}
-the constant 'f' in the equation can be calculated as
-\begin{align}
-	f = \norm{\vec{C}}^2 - \vec{r}^2 \\
-	f = \sqrt{2^2 + 2^2}^2 - 13 \\
-	f = -5
-\end{align}
-
-The general equation of the circle as a conic is
+The given equation of the parabola is $y^2 = 4ax$, which can be expressed also as
 \begin{equation}
-	\vec{x}^T\vec{V}\vec{x} + 2\vec{u}^T\vec{x} + f = 0
+	\vec{x}^T\vec{V}\vec{x} + 2\vec{u}^T\vec{x} = 0
+	\label{par}
 \end{equation}
-by subtitution the considered parameters in the general form, 
-\begin{equation}
-	\vec{x}^T\vec{x} + 2\myvec{-2&-2}\vec{x} - 5 = 0
-	\label{eqn:circle}
-\end{equation}
-this the desired equation of the circle with center at (2,2) and passes through (4,5).\\
-We can verify the equation by substituting the point in the equation,
-
+where
 \begin{align}
-	\vec{x} = \myvec{4 & 5}
+	\vec{V} = \myvec{0&0\\0&1} \\
+	\vec{u}= \myvec{-2 \\ 0} \\
+	f = 0
 \end{align}
-from the eqn \ref{eqn:circle}
+We know that the point $\vec{A}$ lies on the parabola and 
+the normal at $\vec{A}$ can be calculated as
 \begin{align}
-	\myvec{4 & 5} \myvec{4\\5} + 2\myvec{-2\\-2}\myvec{4&5} -5 = 0\\
-	\implies
-	4^2 + 5 ^2 -16 -20 -5 =0 \\
-	\implies
-	0=0\\
-	LHS = RHS
+	\vec{n} = \vec{V}\vec{A} + \vec{u}	
+	\label{eq:normal}
 \end{align}
-Hence, equation \ref{eqn:circle} is the required circle equation.
-
-
-
-
-
-
+Given that the normal passes through $\vec{A} \& \vec{B}$
+\begin{align}
+	L : \vec{x} = \vec{A} + \mu_i \vec{n}  
+\end{align}
+intersection with conic in eqn \eqref{par}
+\begin{align}
+	\mu_1 = 0\\
+	\mu_2 = -3
+\end{align}
+the point $\vec{B}$  
+\begin{align}
+	\vec{B} = \vec{A} + \mu_2\vec{n}
+\end{align}
+The slope of $\vec{AB}$ can be calculated as
+\begin{align}
+	\vec{B-A} = \myvec{6\\-6\sqrt{2}}\\
+	\implies \vec{m} = \myvec{1\\m}\\
+	\implies m = -\sqrt{2}
+\end{align}
+	Hence,  the slope of the normal $\vec{AB}$ is $-\sqrt{2}$.
 \end{document}

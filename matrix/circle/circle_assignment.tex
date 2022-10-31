@@ -45,62 +45,84 @@ Input taken for the construction of the Circle and the tangents is 'r' radius of
 		\hline
 		r & 10 & circle radius\\
 		\hline
-		O & (0,0,0) & Center\\
+		O & $-\vec{u}$ & Center\\
 		\hline
-		A & $(rcos(\theta),rsin(\theta),0)$ & point A\\
+		A & \myvec{a_1\\a_2} & point A\\
 		\hline
-		B & $(-rcos(\theta),-rsin(\theta),0)$ & point B\\
+		B & \myvec{b_1\\b_2} & point B\\
 		\hline
 	\end{tabular}
 \end{table}
 
 Let us assume a circle with radius 'r' and center at origin.\\
 \begin{align}
-	\boldsymbol{x}^{T}\boldsymbol{Vx} + 2\boldsymbol{u}^{T}x + f = 0
+	\boldsymbol{x}^{T}\boldsymbol{Vx} + 2\boldsymbol{u}^{T}\vec{x} + f = 0
 \end{align}
 but, for a Circle 
 \begin{align}
-	\boldsymbol{V} = \myvec{ 1 & 0 & 0\\0 & 1&0\\0&0&1}
+	\boldsymbol{V} = \myvec{ 1 & 0 \\0 & 1}
 \end{align}
-and the center of the circle is at origin,
+and the center of the circle is,
 \begin{align}
-	\boldsymbol{u}^{T} = \myvec{ 0 \\0 \\0}
+	-\vec{u} = \myvec{u_1 \\ u_2}
+	\label{center}
 \end{align}
-Here, the points \boldsymbol{A} and \boldsymbol{B} are the ends of diameter of the circle.\\
-To prove that tangets at the ends of a diameter are parallel, we need to find the slope of tangents at the given points.
-
+Let us assume a point $\vec{A}$ on the circle and a point $\vec{B}$ such that the points form the diameter of the circle.
+%To prove that tangets at the ends of a diameter are parallel, we need to find the slope of tangents at the given points.\\
+%\begin{align}
+%	\vec{A} = \myvec{a_1 \\ a_2}
+%\end{align}
+Center of the circle bisect the diameter in equal parts. Then,
 \begin{eqnarray}
-	\vec{A} = \myvec{r.cos\theta \\r.sin\theta\\ 0},
-	\vec{B} = \myvec{-r.cos\theta \\-r.sin\theta\\0}
+	\frac{\vec{A} + \vec{B}}{2} = -\vec{u} \\
+	\implies \vec{A}+\vec{B} = -2\vec{u}
+	\label{ab}
 \end{eqnarray}
 
-We know that the cross product of two vectors results in a perpendicular vector, so we can find the tanget by cross multiplying radius vector and z-axisunit vector.
-
+Here, $\vec{A}$ and $\vec{B}$ are the ends of the diameter and the contact points for the tangents.
+We know that, for a circle, any line passing through it's center is a normal to the circle at the point of contact.\\
+Tangent intersect the circle at only one point on it's circumference.
+So, the line intersecting the circle at one point $\vec{q}$ is 
 \begin{align}
-	\vec{Z} = \myvec{0\\0\\1}
+	\boldsymbol{m}^{T}(\boldsymbol{Vq} + \boldsymbol{u}) = 0
 \end{align}
-So, the tangents at \boldsymbol{A} and \boldsymbol{B} are given by,
-
+where $\boldsymbol{m}$ is the directional vector of line at the point of contact.\\
+equation for a tangent at point $\vec{A}$ is
 \begin{align}
-	\boldsymbol{T_1}= \boldsymbol{A} X \boldsymbol{Z},
-	\boldsymbol{T_2} = \boldsymbol{B} X \boldsymbol{Z}
+	\boldsymbol{m_1}^{T}(\boldsymbol{A} + \boldsymbol{u}) = 0
+	\label{eqn:t1}
 \end{align}
-where \boldsymbol{A} and \boldsymbol{B} are the radius vectors towards the points A and B on the circle form the center of the circle.\\
-Then, 
-\begin{eqnarray}
-	\vec{T_1} = \myvec{r.sin\theta \\ -r.cos\theta \\ 0},
-	\vec{T_2} = \myvec{-r.sin\theta \\ r.cos\theta \\ 0}
-\end{eqnarray}
-Here, \boldsymbol{T_1} and \boldsymbol{T_2} are the directional vectors of tangents at points A and B, which are the end points of a diameter.\\
+Similarly, Euqation of the tangent at $\boldsymbol{B}$ is given by,
+\begin{align}
+	\boldsymbol{m_2}^{T}(\boldsymbol{B} + \boldsymbol{u}) = 0
+	\label{eqn:t2}
+\end{align}
+where $\vec{m_1}$\&$\vec{m_2}$ are the direction vectors of the tangents.\\
+%where $\boldsymbol{n}$ is the normal vector at the point of contact.\\
+Then, the normal vectors at the point of contact of tangets are
+\begin{equation}
+	\vec{A}+\vec{u} = k_1\vec{n_1}
+	\label{n1}
+\end{equation}
+\begin{equation}
+	\vec{B}+\vec{u} = k_2\vec{n_2}
+	\label{n2}
+\end{equation}
+by adding the above equations \eqref{n1}\&\eqref{n2}, 
+\begin{align}
+	\vec{A}+\vec{B} + 2\vec{u} = k_1\vec{n_1}+k_2\vec{n_2}
+	\label{addeq}
+\end{align}
+from \eqref{ab}, \eqref{addeq} can be modified as 
+ \begin{align}
+	 k_1\vec{n_1}+k_2\vec{n_2} = 0 \\
+	k_1\vec{n_1} = -k_2\vec{n_2}
+ \end{align}
+The crossproduct of the normal vectors is zero.
+\begin{align}
+	\vec{n_1} \times \vec{n_2} = 0
+\end{align}
 
-We know that, cross product of any two parallel vectors results zero.\\
-
-If we cross multiply the vectors \boldsymol{T_1} and \boldsymbol{T_2}
-
-\begin{eqnarray}
-	\vec{T_1} X \vec{T_2}
-	= \myvec{r.sin\theta \\ -r.cos\theta \\ 0} X \myvec{-r.sin\theta \\r.cos\theta \\0}\\
-	= \myvec{0\\0\\0}
-\end{eqnarray}
-The cross product of the two tangents is equal to zero, so we can say that the tangents are parallel.
+Here, the mormal vectors are parallel $n_1$ \& $n_2$. So the tangents are parallel to each other.\\
+Hence, we have proved that the tangents at the ends of the diameter of a circle are parallel.
 \end{document}

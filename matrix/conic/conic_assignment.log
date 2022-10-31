@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.13)  10 OCT 2022 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.13)  31 OCT 2022 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -266,42 +266,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
 <figs/plot_con.png, id=1, 462.528pt x 346.896pt>
 File: figs/plot_con.png Graphic file (type png)
 <use figs/plot_con.png>
 Package pdftex.def Info: figs/plot_con.png  used on input line 32.
 (pdftex.def)             Requested size: 266.0125pt x 199.51657pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figs/plot_con.png>]
 (./conic_assignment.aux) ) 
 Here is how much of TeX's memory you used:
- 2868 strings out of 478287
- 44588 string characters out of 5849289
- 357028 words of memory out of 5000000
- 21038 multiletter control sequences out of 15000+600000
- 480247 words of font info for 63 fonts, out of 8000000 for 9000
+ 2851 strings out of 478287
+ 44404 string characters out of 5849289
+ 358036 words of memory out of 5000000
+ 21030 multiletter control sequences out of 15000+600000
+ 477384 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,62p,230b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,62p,333b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
 i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on conic_assignment.pdf (1 page, 105024 bytes).
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on conic_assignment.pdf (1 page, 102393 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
